@@ -3,8 +3,12 @@ Password: ```scalereal```
 
 <h2>Building and running the container</h2>
 
-```sudo docker build .```<br>
-```sudo docker container create container_name image_name```<br>
-```sudo docker exec -it container_name```<br>
-```mysql -u scalreal -p```
+```docker build .```<br>
+```docker run -it container_id bash```<br>
+```sudo docker exec -it container_id bash```<br>
+### After entering bash and starting mysql server execute foloowing commands to check your database,tables:
+```show databases;```<br>
+```use scalerealInterns;```<br>
+```select * from internData;```
+
 
